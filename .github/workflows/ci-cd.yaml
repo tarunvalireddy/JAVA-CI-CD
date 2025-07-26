@@ -67,7 +67,7 @@ jobs:
 
       - name: Update Deployment File and Push
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN_PUSH }}
+          GH_TOKEN: ${{ secrets.ACTION_TOKEN_PUSH }}
         run: |
           git config --global user.email "tarunvalireddyy@gmail.com"
           git config --global user.name "tarunvalireddy"
