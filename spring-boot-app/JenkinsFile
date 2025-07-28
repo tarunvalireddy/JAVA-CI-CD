@@ -55,7 +55,7 @@ pipeline {
                 sh '''
                     git config --global user.email "tarunvalireddyy@gmail.com"
                     git config --global user.name "tarunvalireddy"
-                    git config --global --add safe.directory /var/lib/jenkins/workspace/JAVA-CI-CD
+                    git config --global --add safe.directory /var/lib/jenkins/workspace/java-app
                     BUILD_NUMBER=${BUILD_NUMBER}
                     sed -i "s/ultimate-cicd:[a-zA-Z0-9._-]*/ultimate-cicd:${BUILD_NUMBER}/g" spring-boot-app-manifests/deployment.yml
                     git add spring-boot-app-manifests/deployment.yml
